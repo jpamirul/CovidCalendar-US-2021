@@ -2,11 +2,14 @@ import React from "react";
 
 const StateDisplay = (props) => {
   // console.log(props);
-  console.log("hihi" + props.date);
-  const filterData = props.displayThread.filter((data) => {
-    // if (new Date(data.date) === props.date) {
-    // }
-    // console.log(props.date);
+  // console.log("hihi" + props.date);
+  console.log(props.displayThread);
+  const filterData = props.displayThread.filter((data) =>
+    data.date.toString().includes(props.date)
+  );
+  console.log(filterData);
+
+  const displayData = filterData.map((data) => {
     return (
       <div className="data" key={data.date}>
         <p>Date:{data.date}</p>
@@ -14,12 +17,8 @@ const StateDisplay = (props) => {
       </div>
     );
   });
-  // console.log(filterData);
-  return (
-    <>
-      <div>{filterData}</div>
-    </>
-  );
+
+  return <>{displayData}</>;
 };
 
 export default StateDisplay;
@@ -38,3 +37,14 @@ export default StateDisplay;
 // export default StateDisplay;
 
 //key={Math.random(Math.floor())
+
+// const filterData = props.displayThread.filter((data) => {
+//   if (data.date === props.date) {
+//     return (
+//       <div className="data" key={data.date}>
+//         <p>Date:{data.date}</p>
+//         <p>No of Death:{data.death}</p>
+//       </div>
+//     );
+//   } else return null;
+// });
