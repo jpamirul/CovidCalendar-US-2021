@@ -1,18 +1,23 @@
 import React from "react";
 
 const StateDisplay = (props) => {
-  console.log(props);
-  const filterState = props.displayThread.map((data) => {
+  // console.log(props);
+  console.log("hihi" + props.date);
+  const filterData = props.displayThread.filter((data) => {
+    // if (new Date(data.date) === props.date) {
+    // }
+    // console.log(props.date);
     return (
-      <div className="state" key={data.date}>
-        <p>{data.states}</p>
+      <div className="data" key={data.date}>
+        <p>Date:{data.date}</p>
+        <p>No of Death:{data.death}</p>
       </div>
     );
   });
-  console.log(filterState);
+  // console.log(filterData);
   return (
     <>
-      <div>{filterState}</div>
+      <div>{filterData}</div>
     </>
   );
 };
