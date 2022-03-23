@@ -14,6 +14,9 @@ const NavBar = () => {
           <li>
             <NavLink to="/AboutCovid">About</NavLink>
           </li>
+          <li>
+            <NavLink to="/ChartCovid">Covid Chart</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

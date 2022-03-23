@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CalendarCovid from "./CalendarCovid";
+import ChartCovid from "./ChartCovid";
 import StateDisplay from "./StateDisplay";
 
 const ThreadContainer = () => {
