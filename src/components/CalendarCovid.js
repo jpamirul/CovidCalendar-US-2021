@@ -11,7 +11,7 @@ const CalendarCovid = (props) => {
         // activeStartDate={new Date(2021, 0, 1)}
         minDate={new Date(2021, 0, 1)}
         maxDate={new Date(2021, 2, 7)}
-        setActiveDate={new Date(2021, 0, 1)}
+        activeStartDate={new Date(2021, 0, 1)}
       />
     </div>
   );

@@ -3,6 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import AboutCovid from "./components/AboutCovid";
 import NavBar from "./components/NavBar";
 import ChartCovid from "./components/ChartCovid";
+import "react-calendar/dist/Calendar.css";
 
 function App() {
   return (
