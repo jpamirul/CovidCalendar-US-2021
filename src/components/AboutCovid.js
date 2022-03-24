@@ -4,13 +4,12 @@ const AboutCovid = () => {
   return (
     <div>
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        Hi, this is a covid calendar that displays the number of death in US
+        2021, Jan-Mar
+      </p>
+      <p>
+        API used
+        <a href="https://api.covidtracking.com/v1/us/daily.json"> click here</a>
       </p>
     </div>
   );
