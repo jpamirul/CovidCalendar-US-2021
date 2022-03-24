@@ -9,6 +9,7 @@
 ## About
 
 A calendar that displays the date and number of deaths when a date is clicked from the calendar using React
+Deployed @ https://uscovid2021calendar.netlify.app/
 
 ## Calendar
 
