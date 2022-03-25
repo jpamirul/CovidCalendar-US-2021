@@ -8,7 +8,7 @@ const NavBar = () => {
         <ul>
           <li>
             <NavLink to="/ThreadContainer">
-              Covid Calendar 2021 "(Jan - May)"
+              Covid Calendar 2021 "(Jan - Mar)"
             </NavLink>
           </li>
           <li>
